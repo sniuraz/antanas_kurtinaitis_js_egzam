@@ -20,22 +20,20 @@ const users = [
     { id: '9', name: 'Daniel Cane', age: 51 },
 ];
 
-function getUserAverageAge(arg) {
+function getUserAverageAge(arr) {
     let vid = 0;
-    for (let i = 0; i < arg.length; i++) {
-        vid += arg[i].age;
+    for (let i = 0; i < arr.length; i++) {
+        vid += arr[i].age;
     }
-    vid = vid / arg.length;
+    vid = vid / arr.length;
     console.log('vid ===', vid);
 }
 
 getUserAverageAge(users);
 
-function getUsersNames(arg) {
-    let newArr = arg.map(function (e) {
-        return `${e.name}`;
-    });
-    console.log('newArr ===', newArr);
+function getUsersNames(arr) {
+    const newUsersArr = arr.map((e) => `${e.name}`);
+    console.log('newUsersArr ===', newUsersArr);
 }
 
 getUsersNames(users);
