@@ -62,12 +62,17 @@ form {
 }
 
 .result {
-    width: 65%;
+    width: 100%;
     margin: 0;
     padding: 20px;
     outline: 0;
     border: 0;
     font-size: 2em;
+}
+
+.error {
+    color: tomato;
+    font-size: 1.5em;
 }
 
 /* Tablet */

@@ -19,8 +19,17 @@ btnEl.addEventListener('click', (e) => {
     // input console
     console.log(inputEl.value);
 
-    unitsPrintToHtml(inputEl.value);
+    // unitsPrintToHtml(inputEl.value);
+    inputCheck(inputEl.value);
 });
+
+function inputCheck(input) {
+    if (input > 0) {
+        unitsPrintToHtml(input);
+    } else {
+        rezEl.innerHTML = `<p class="result error">Įvedėte neteisingus duomenis!</p>`;
+    }
+}
 
 function unitsPrintToHtml(input) {
     // units
