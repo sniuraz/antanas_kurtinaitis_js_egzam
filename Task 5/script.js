@@ -21,19 +21,15 @@ const users = [
 ];
 
 function filterDogOwers(arr) {
-    const newArr = arr.filter(function (e) {
-        return e.hasDog == true;
-    });
-    console.log('newArr ===', newArr);
+    const user = arr.filter((e) => e.hasDog == true);
+    console.log('user ===', user);
 }
 
 filterDogOwers(users);
 
 function filterAdults(arr) {
-    const newArr = arr.filter(function (e) {
-        return e.age >= 18;
-    });
-    console.log('newArr ===', newArr);
+    const user = arr.filter((e) => e.age >= 18);
+    console.log('user ===', user);
 }
 
 filterAdults(users);
