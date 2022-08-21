@@ -14,8 +14,7 @@ turėti bent minimalų stilių ir būti responsive;
 const ENDPOINT = 'https://api.github.com/users';
 const btnEl = document.getElementById('btn');
 const pEl = document.getElementById('message');
-
-const usersContainerEl = document.getElementById('output'); // hiden
+const usersContainerEl = document.getElementById('output');
 
 btnEl.addEventListener('click', (e) => {
     e.preventDefault();
